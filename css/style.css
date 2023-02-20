@@ -63,6 +63,9 @@ section,
     width: 100%;
 }
 
+.light{
+    color: var(--light);
+}
 /*Debug*/
 /*
 #app_header{
@@ -97,7 +100,7 @@ section,
     height: 200px;
 }
 
-/*Responsive*/
+/* #region Responsive*/
 
 @media screen and (min-width:768px) {
     .col_md_4{
@@ -105,7 +108,7 @@ section,
     }
 
     .col_md_6{
-        width: calc(100% / 12 * 6);
+        width: calc(100% / 12 * 6 - 1rem);
     }
 
     .col_md_8{
@@ -136,16 +139,16 @@ section,
 
 @media screen and (min-width:1200px) {
     .col_lg_4{
-        width: calc(100% / 12 * 4 );
+        width: calc(100% / 12 * 4 - 1rem);
     }
     
     .col_lg_6{
-        width: calc(100% / 12 * 6 - 2rem);
+        width: calc(100% / 12 * 6 - 1rem);
     }
 
     .box{
         width: 30%;
-        margin-left: 2rem;
+        margin-left: 1rem;
         margin-top: 15rem;
     }
 
@@ -165,9 +168,11 @@ section,
         width: 60%;
     }
 }
+/* #endregion Responsive*/
 
-/*----Header----*/
 
+/*---- Header----*/
+/*#region*/
 #app_header{
     background-color: var(--secondary);
     padding: 0.7rem 0;
@@ -180,10 +185,12 @@ section,
 nav i{
     color: var(--light);
 } 
+/*#endregion*/
+
 
 /*----Main----*/
 
-/*Demo*/
+/* #region Demo*/
 
 .demo .card, .card-flex{
     background-color: var(--demo);
@@ -209,11 +216,13 @@ nav i{
     color: var(--light);
 }
 
-.card{
+.demo .card{
     text-align: center;
 }
 
-.card .img i, h3{
+.card-flex .text h3,
+.card .img i,
+.card .img h3{
     color: var(--secondary);
     padding: 0.5rem 0;
 }
@@ -221,11 +230,11 @@ nav i{
 .card .info{
     padding-bottom: 2rem;
 }
+/* #endregion Demo*/
 
-/*Planning*/
 
+/*#region Planning*/
 .planning h3, p{
-    color: var(--light);
     padding: 1rem 0;
 }
 
@@ -246,16 +255,19 @@ nav i{
     padding-top: 1rem;
 }
 
-.arrow i{
+.box .arrow i{
     background-color: var(--primary);
+    color: black;
     width: 40px;
     height: 40px;
     padding: 0.7rem 0;
 
     border-radius: 50%;
 }
+/*#endregion Planning*/
 
-/*Testimonials*/
+
+/*#region Testimonials*/
 
 .testimonials .testimonial_heading{
     text-align: center;
@@ -272,7 +284,6 @@ nav i{
 
 .testimonial_heading p{
     line-height: 1.5rem;
-    color: black;
 }
 
 .testimonials .item{
@@ -295,8 +306,43 @@ nav i{
 .testimonials .card-box .bio span{
     color:var(--light);
     text-transform: uppercase;
-    margin: auto;
+    padding-left: 1rem;
 }
+/*#endregion Testimonials*/
+
+
+/*#region Benefits*/
+
+.benefits .container h2{
+    text-align:  center;
+    padding: 2rem 0;
+}
+
+.benefits .container .card{
+    background-color: var(--light);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.benefits .container .card .number{
+   font-size: 3rem;
+   margin-bottom: 1rem;
+}
+
+
+.benefits .container .card .number, h3{
+    color: var(--primary);
+}
+
+.benefits .container .card button{
+    background-color: var(--primary);
+    border: none;
+    border-radius: 20px;
+    padding: 0.7rem 2.5rem;
+}
+/*#endregion Benefits*/
+
 
 /*----Footer----*/
 
