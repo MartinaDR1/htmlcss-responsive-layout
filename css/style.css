@@ -37,6 +37,7 @@
 .col_12{
     width: 100%;
 }
+
 /*Debug*/
 
 #app_header{
@@ -53,7 +54,17 @@
     border: 1px solid black;
 }
 
+.testimonials{
+    height: 200px;
+}
+
+.image, .bio{
+    border: 1px dashed red;
+    height: 100px;
+}
+
 /*Responsive*/
+
 @media screen and (min-width:768px) {
     .col_md_4{
         width: calc(100% / 12 * 4 );
@@ -62,12 +73,25 @@
     .col_md_8{
         width: calc(100% / 12 * 8 );
     }
+
+    .card .col_12{
+        display: flex;
+    }
+    .image{
+        width: 30%;
+    }
+    .bio{
+        width: 70%;
+    }
 }
 
 @media screen and (min-width:1200px) {
-
+    .col_lg_6{
+        width: calc(100% / 12 * 6);
+    }
 }
-/*Header*/
+
+/*----Header----*/
 
 #app_header{
     background-color: var(--secondary);
@@ -75,4 +99,13 @@
 
 .logo, nav{
     width: 50%;
+}
+
+
+/*----Main----*/
+
+/*Planning*/
+
+.planning, .card{
+    background-color: var(--primary);
 }
