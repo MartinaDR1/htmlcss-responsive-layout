@@ -136,9 +136,19 @@ section,
     }
     
     .col_lg_6{
-        width: calc(100% / 12 * 6);
+        width: calc(100% / 12 * 6 - 2rem);
     }
 
+    .box{
+        width: 30%;
+        margin-left: 2rem;
+        margin-top: 15rem;
+    }
+
+    .box img{
+        width: 200px;
+    }
+    
     .card-flex {
         display: flex;
     }
@@ -207,6 +217,43 @@ nav i{
 .card .info{
     padding-bottom: 2rem;
 }
+
+/*Planning*/
+
+.planning h3, p{
+    color: var(--light);
+    padding: 1rem 0;
+}
+
+.planning .box{
+    background-color: var(--light);
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.planning .box h3, span{
+    color: black;
+}
+
+.arrow{
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.arrow i{
+    background-color: var(--primary);
+    width: 40px;
+    height: 40px;
+    padding: 0.7rem 0;
+
+    border-radius: 50%;
+}
+
+
+
+
 /*----Footer----*/
 
 #app_footer{
