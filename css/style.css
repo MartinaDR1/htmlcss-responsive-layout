@@ -8,6 +8,10 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
+img{
+    max-width: 100%;
+}
+
 :root{
     --primary:#9792e4;
     --secondary: #0084fd;
@@ -22,6 +26,10 @@ body{
     margin: auto;
 }
 
+section, 
+.demo{
+    padding: 3rem 0;
+}
 .planning, 
 .card, 
 .benefits,
@@ -50,7 +58,7 @@ body{
 }
 
 /*Debug*/
-
+/*
 #app_header{
     height: 3rem;
 }
@@ -59,7 +67,7 @@ body{
     border: 1px solid black;
     height: 3rem;
 }
-
+*/
 .demo .col_12, .col_8, .col_4{
     height: 200px;
     border: 1px solid black;
@@ -123,13 +131,16 @@ body{
 
 #app_header{
     background-color: var(--secondary);
+    padding: 0.7rem 0;
 }
 
-.logo, nav{
-    width: 50%;
+#app_header .container{
+    justify-content:space-between;
 }
 
-
+nav i{
+    color: var(--light);
+} 
 /*----Main----*/
 
 
