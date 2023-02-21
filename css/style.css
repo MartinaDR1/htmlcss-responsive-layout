@@ -86,12 +86,12 @@ section,
     border: 1px dashed red;
     height: 100px;
 }
-*/
+
 .about{
     height: 200px;
     border: 1px solid blue;
 }
-
+*/
 .call_to_action{
     height: 200px;
 }
@@ -120,22 +120,23 @@ section,
     }
 
     .card-box .item,
-    .about .col_12{
+    .about .row{
         display: flex;
     }
 
-    .image{
-        width: 30%;
-    }
-
-    .bio{
+    .testimonials .bio{
         width: 70%;
     }
 
     .card-box .item .bio{
         text-align: start;
     }
+
+    .about .row .image{
+        padding: 1rem 0 1rem 3rem ;
+    }
 }
+
 
 @media screen and (min-width:1200px) {
     .col_lg_4{
@@ -166,6 +167,10 @@ section,
 
     .text{
         width: 60%;
+    }
+
+    .about .col_12 .image{
+        width: 100%;
     }
 }
 /* #endregion Responsive*/
@@ -293,7 +298,8 @@ nav i{
     border-radius: 20px;
 }
 
-.testimonials .item .image, .bio{
+.testimonials .item .image, 
+.testimonials .item .image .bio{
     text-align: center;
 }
 
@@ -343,6 +349,46 @@ nav i{
 }
 /*#endregion Benefits*/
 
+/*#region About*/
+
+.about .bio h3{
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--primary);
+}
+
+.about .bio p{
+    font-size: 14px;
+    line-height: 2rem;
+}
+
+.about .col_12 .image img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.about .col_12 .image h6{
+    color: var(--primary);
+    font-size: 22px;
+}
+
+.about .col_12 .image button{
+    background-color: var(--primary);
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+}
+
+.about .col_12 .image button i, 
+.about .col_12 .image button a{
+    color: var(--light);
+}
+/*#endregion About*/
 
 /*----Footer----*/
 
