@@ -71,40 +71,7 @@ section,
 .light{
     color: var(--light);
 }
-/*Debug*/
-/*
-#app_header{
-    height: 3rem;
-}
 
-.logo, nav{
-    border: 1px solid black;
-    height: 3rem;
-}
-
-.demo .col_12, .col_8, .col_4{
-    height: 200px;
-    border: 1px solid black;
-}
-
-.image, .bio{
-    border: 1px dashed red;
-    height: 100px;
-}
-
-.about{
-    height: 200px;
-    border: 1px solid blue;
-}
-
-.call_to_action{
-    height: 200px;
-}
-
-#app_footer{
-    height: 200px;
-}
-*/
 /* #region Responsive*/
 
 @media screen and (min-width:768px) {
@@ -129,10 +96,14 @@ section,
         display: flex;
     }
 
+    .demo .card-flex .image{
+        width: 40%;
+    }
+
     .testimonials .bio{
         width: 70%;
     }
-
+    
     .card-box .item .bio{
         text-align: start;
     }
