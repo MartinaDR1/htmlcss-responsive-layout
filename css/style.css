@@ -100,11 +100,11 @@ section,
 .call_to_action{
     height: 200px;
 }
-*/
+
 #app_footer{
     height: 200px;
 }
-
+*/
 /* #region Responsive*/
 
 @media screen and (min-width:768px) {
@@ -452,4 +452,14 @@ nav i{
 
 #app_footer{
     background-color: var(--dark);
+    text-align: center;
+}
+
+#app_footer .container-sm p{
+    font-size: 12px;
+    padding: 1.5rem 5rem;
+}
+
+#app_footer .container-sm a{
+    color: var(--primary);
 }
