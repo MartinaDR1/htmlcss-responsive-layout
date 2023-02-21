@@ -92,11 +92,13 @@ ul{
         width: calc(100% / 12 * 8 - 1rem);
     }
     
-    .card, .card-flex{
+    .demo .card, 
+    .demo .card-flex,
+    .benefits .card{
         margin-right: 1rem;
     }
 
-    .card-box .item,
+    .testimonials .card-box .item,
     .about .row{
         display: flex;
     }
@@ -173,7 +175,7 @@ ul{
         width: 60%;
     }
 
-    .about .col_12 .image{
+    .about .image{
         width: 100%;
     }
 }
@@ -211,7 +213,8 @@ ul{
 
 /* #region Demo*/
 
-.demo .card, .card-flex{
+.demo .card, 
+.card-flex{
     background-color: var(--demo);
     padding: 2rem 2rem 0 2rem;
     border-radius: 20px;
@@ -231,7 +234,8 @@ ul{
     border-radius: 20px;
 }
 
-.text i, strong{
+.demo .text i, 
+.demo .text strong{
     color: var(--light);
 }
 
@@ -239,21 +243,22 @@ ul{
     text-align: center;
 }
 
-.card-flex .text h3,
-.card .img i,
-.card .img h3{
+.demo .card-flex .text h3,
+.demo .card .img i,
+.demo .card .img h3{
     color: var(--secondary);
     padding: 0.5rem 0;
 }
 
-.card .info{
+.demo .card .info{
     padding-bottom: 2rem;
 }
 /* #endregion Demo*/
 
 
 /*#region Planning*/
-.planning h3, p{
+.planning h3, 
+.planning p{
     padding: 1rem 0;
 }
 
@@ -264,11 +269,12 @@ ul{
     text-align: center;
 }
 
-.planning .box h3, span{
+.planning .box h3,
+.planning .box span{
     color: black;
 }
 
-.arrow{
+.planning .arrow{
     display: block;
     text-align: center;
     padding-top: 1rem;
@@ -351,7 +357,8 @@ ul{
 }
 
 
-.benefits .container .card .number, h3{
+.benefits .container .card .number,
+.benefits .container .card h3{
     color: var(--primary);
 }
 
@@ -376,7 +383,7 @@ ul{
     line-height: 2rem;
 }
 
-.about .col_12 .image img{
+.about .image img{
     width: 150px;
     height: 150px;
     margin-bottom: 1rem;
@@ -384,12 +391,12 @@ ul{
     background-color: red;
 }
 
-.about .col_12 .image h6{
+.about .image h6{
     color: var(--primary);
     font-size: 22px;
 }
 
-.about .col_12 .image button{
+.about .image button{
     background-color: var(--primary);
     padding: 0.5rem 1.5rem;
     margin-top: 1rem;
@@ -398,9 +405,21 @@ ul{
     font-size: 12px;
 }
 
-.about .col_12 .image button i, 
-.about .col_12 .image button a{
+.about .image button i, 
+.about .image button a{
     color: var(--light);
+}
+
+.about .image .block-img{
+    width: 200px;
+    position: relative;
+}
+
+.about .image .special{
+    color: var(--primary);
+    position: absolute;
+    top:0px;
+    right: 10px;
 }
 /*#endregion About*/
 
