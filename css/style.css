@@ -32,9 +32,14 @@ img{
     max-width: 1152px;
     margin: auto;
 }
+
 section, 
 .demo{
     padding: 3rem 0;
+}
+
+ul{
+    list-style: none;
 }
 
 .no-dec{
@@ -116,6 +121,28 @@ section,
 
 
 @media screen and (min-width:1200px) {
+    #app_header .container nav i{
+        display: none;
+    }
+
+    #app_header .container nav ul{
+        display: block;
+        padding-top: 10px;
+    }
+
+    #app_header .container nav ul li{
+        display: inline;
+        margin: 5px;
+
+    }
+
+    #app_header .container nav ul li button{
+        background-color: var(--light);
+        border:none;
+        border-radius: 20px;
+        padding: 0.5rem 0.7rem;
+    }
+
     .col_lg_4{
         width: calc(100% / 12 * 4 - 1rem);
     }
@@ -155,6 +182,7 @@ section,
 
 /*---- Header----*/
 /*#region*/
+
 #app_header{
     background-color: var(--secondary);
     padding: 0.7rem 0;
@@ -164,9 +192,18 @@ section,
     justify-content:space-between;
 }
 
-nav i{
+#app_header .container ul{
+    display: none;
+}
+
+#app_header .container nav i{
     color: var(--light);
 } 
+
+#app_header .container nav i:hover li{
+    display: block;
+}
+
 /*#endregion*/
 
 
