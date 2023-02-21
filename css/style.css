@@ -27,6 +27,11 @@ img{
     margin: auto;
 }
 
+.container-sm{
+    width: 60%;
+    max-width: 1152px;
+    margin: auto;
+}
 section, 
 .demo{
     padding: 3rem 0;
@@ -91,11 +96,11 @@ section,
     height: 200px;
     border: 1px solid blue;
 }
-*/
+
 .call_to_action{
     height: 200px;
 }
-
+*/
 #app_footer{
     height: 200px;
 }
@@ -135,6 +140,7 @@ section,
     .about .row .image{
         padding: 1rem 0 1rem 3rem ;
     }
+
 }
 
 
@@ -389,6 +395,58 @@ nav i{
     color: var(--light);
 }
 /*#endregion About*/
+
+/*#region Call_to_action*/
+
+.call_to_action{
+    text-align: center;
+    line-height: 2rem;
+}
+
+.call_to_action .call_top span{
+    text-transform: uppercase;
+    color: #eeeeee6b;
+}
+
+.call_to_action .call_top h3{
+    font-size: 26px;
+    padding: 1rem 0;
+}
+
+.call_to_action .call_top #txt-special{
+    color: var(--txt);
+    font-size: 50px;
+    padding: 2rem 0;
+}
+
+.call_to_action .call_bottom{ 
+    padding: 0 2rem;
+} 
+
+.call_to_action .call_bottom button{
+    display: block;
+    padding: 1.2rem 5rem;
+    border: none;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.call_to_action .call_bottom button a{
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+.call_to_action .call_bottom span{
+    font-size: 12px;
+}
+
+.call_to_action .call_bottom span i{
+    font-size: 5px;
+    margin: 0 3px;
+    vertical-align: middle;
+}
+
+/*#endregion Call_to_action*/
 
 /*----Footer----*/
 
